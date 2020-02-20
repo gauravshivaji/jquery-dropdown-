@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <title>Select and deselect all checkboxes using jquery</title>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+   <style>
+       table, th, td {
+  border: 1px solid black;
+}
+
+.highlight { background-color: red; }
+.highlight1 { background-color: yellow; }
+
+   </style>
+</head>
+<body>
+
+<!-- <form>
+    <input type="checkbox"  value="Bike">
+<input type="checkbox"   value="Bike">
+<input type="checkbox" value="Bike">
+
+<input type="button" id="check" value="select alll">
+<input type="button" id="uncheck" value="clear all">
+</form>
+ -->
+
+<!-- 
+ <input value="1" name="product" class="product-list" type="checkbox">Product 1  
+    <input value="2" name="product" class="product-list" type="checkbox">Product 2  
+    <input value="3" name="product" class="product-list" type="checkbox">Product 3  
+ -->
+
+
+ <table id="myTable" style="width:100%">
+    <tr>
+      <th>select all<input id="checkall" type="checkbox"     ></th>
+      <th class="changecontent">name</th> 
+      <th class="changecontent">hobbis</th>
+      <th class="changecontent">marks</th> 
+      <th class="changecontent">action</th>
+    </tr>
+    <tr>
+      <td><input class="check" type="checkbox"     ></td>
+      <td id="attrName" class="changecontent">Smith</td>
+      <td id="attrHobbie" class="changecontent" >travel</td>
+      <td id="attrMark" class="changecontent">55</td>
+      <td><button type="button" class="delete-row">Delete Row</button></td>
+    </tr>
+    <tr>
+      <td><input class="check" type="checkbox"     ></td>
+      <td id="attrName" class="changecontent">Doe</td>
+      <td id="attrHobbie" class="changecontent" >cycle</td>
+      <td id="attrMark" class="changecontent">94</td>
+    
+      <td><button type="button" class="delete-row">Delete Row</button></td>
+    </tr>
+    <tr>
+      <td><input class="check" type="checkbox"     ></td>
+      <td id="attrName" class="changecontent">Doe</td>
+      <td  id="attrHobbie" class="changecontent">paint</td>
+      <td  id="attrMark" class="changecontent">88</td>
+      <td><button type="button" class="delete-row">Delete Row</button></td>
+    </tr>
+  </table>
+
+  <h1> form</h1>
+  <form>
+      <table class="inputable">
+          <tr>
+              <td> name</td>
+              <td><input type="text" id="txtName"> </td>
+          </tr>
+          <tr>
+            <td>marks </td>
+            <td><input type="text" id="marks"> </td>
+        </tr>
+        <tr>
+            <td>hobbies </td>
+
+            <td><h6>travel</h6><input name='hobby' type="checkbox" id="ch1"   > </td>
+            <td><h6>cycle</h6><input name='hobby' type="checkbox" id="ch2"   > </td>
+            <td><h6>paint</h6><input name='hobby' type="checkbox" id="ch3"   > </td>
+            <td><h6>cook</h6><input name='hobby' type="checkbox" id="ch4"   > </td>
+        </tr>
+      </table>
+  </form>
+
+<script src="jqueyr.js">
+
+</script>
+</body>
+</html>
